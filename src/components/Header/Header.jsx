@@ -10,22 +10,18 @@ export default function Header() {
                     <img src={logo} alt="" className='header-main__img'/>
                 </div>
                 <div className='header-main__wrp-nav'>
-                    <div className="header-main__nav">
-                        <img src="" alt="" />
-                        <p>Home</p>
-                    </div>
-                    <div className="header-main__nav">
-                        <img src="" alt="" />
-                        <p>Book</p>
-                    </div>
-                    <div className="header-main__nav">
-                        <img src="" alt="" />
-                        <p>Buy</p>
-                    </div>
-                    <div className="header-main__nav">
-                        <img src="" alt="" />
-                        <p>Profile</p>
-                    </div>
+                    <button className="header-main__nav">
+                        <label>HOME</label>
+                    </button>
+                    <button className="header-main__nav">
+                        <label>BOOK</label>
+                    </button>
+                    <button className="header-main__nav">
+                        <label>BUY</label>
+                    </button>
+                    <button className="header-main__nav">
+                        <label>DANCER</label>
+                    </button>
                 </div>
             </div>
 		</>
