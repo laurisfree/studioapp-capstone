@@ -7,16 +7,17 @@
 
     &__day-wrpr {
         display: flex;
+        // flex-direction: column;
         background-color: $btn-pink1;
         // background-color: #545454;
         color: $text-color;
         font-weight: 600;
-        height: 1.5625rem;
+        // height: 1.5625rem;
         text-align: center;
         justify-content: center;
         align-items: center;
         margin-bottom: .5rem;
-        margin-top: .5rem;
+        margin-top: 1rem;
         letter-spacing: .0938rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -28,6 +29,7 @@
         align-items: center;
         justify-content: space-around;
         border-bottom: solid 1px #d36565;
+        border-top: solid 1px #d36565;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
