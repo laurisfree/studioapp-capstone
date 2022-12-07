@@ -1,3 +1,52 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/typography' as *;
+
+.upcoming {
+
+    display: flex;
+    justify-content: space-around;
+    margin-right: .625rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    // border-bottom: solid 1px #d36565;
+    // border-top: solid 1px #d36565;
+    // padding-top: 1rem;
+    // padding-bottom: 1rem;
+    // height: 50px;
+
+    &__date-wrpr{
+        background-color: #ffbaba;
+        width: 60%;
+        font-weight: 500;
+        background: linear-gradient(#d36565, #ffbaba);
+
+    }
+
+    &__date {
+        // background-color: #d36565;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        // width: 100%;
+        // width: fit-content;
+    }
+
+    &__info-wrpr {
+        width: 40%;
+        border: solid 1px #d36565;
+        font-weight: 700;
+        // border-top: solid 1px #d36565;
+    }
+
+    &__info{
+        // background-color: #d36565;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        // width: fit-content;
+        
+
+    }
+
+
+
+}
