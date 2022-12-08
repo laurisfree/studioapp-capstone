@@ -1,22 +1,15 @@
-import './Buy.scss';
+import './Buy.scss'
+import Header from '../../components/Header/Header';
+import BuyPassess from '../../components/BuyPassess/BuyPassess';
 
-
-export default function Buy() {
-  return (
-    <>
-        <div className='buy'>
-            <div>
-                <p>Class Pass</p>
-            </div>
-            <div>
-                <p>Price:</p>
-                <p>$22</p>
-            </div>
-            <div>
-                <p>Total:</p>
-                <p>$</p>
-            </div>
-        </div>
-    </>
-  );
+export default function Buy (){
+    return (
+        <>
+        
+        <Header />
+        <BuyPassess />
+        
+        
+        </>
+    )
 }

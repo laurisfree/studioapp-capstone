@@ -2,6 +2,43 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/typography' as *;
 
+.upcoming-header{
+
+        // display: flex;
+        // // flex-direction: column;
+        // background-color:#ffbaba;
+        // // background-color: #545454;
+        // color: $text-color;
+        // font-weight: 600;
+        // // height: 1.5625rem;
+        // text-align: center;
+        // justify-content: center;
+        // align-items: center;
+        // margin-bottom: .5rem;
+        // margin-top: 1rem;
+        // letter-spacing: .0938rem;
+        // padding-top: 1rem;
+        // padding-bottom: 1rem;
+
+    &__text {
+        
+            display: flex;
+            background-color: #ffbaba;
+            color: #1a1a1a;
+            font-weight: 600;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+            letter-spacing: 0.0938rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+}
+
+
+
 .upcoming {
 
     display: flex;

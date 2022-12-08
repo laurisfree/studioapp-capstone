@@ -4,6 +4,9 @@ import './UserUpcomingClass.scss';
 export default function UserUpcomingClass() {
   return (
     <>
+      <div className='upcoming-header'>
+        <p className='upcoming-header__text'>YOUR UPCOMING CLASSES</p>
+      </div>
       <div className='upcoming'>
         <div className='upcoming__date-wrpr'>
           <div className='upcoming__date'>THURSDAY 01 DEC</div>
