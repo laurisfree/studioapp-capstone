@@ -1,13 +1,20 @@
 import './UserProfile.scss';
+import avatar from '../../assets/avatar/avatar.png'
+import background from '../../assets/background/background.png'
 
 
 export default function UserProfile() {
   return (
     <>
     <div className='profile'>
-      <img src="" alt="" className='profile-photo'/>
+      <div className='profile__wrpr-photo'>
+          <img src={avatar} alt="" className='profile__photo'/>
+      </div>
+      <div className='profile__wrpr-name'>
+        {/* <img src={background} alt="" className='profile__back-name'/> */}
+        <p className='profile__name'>WELCOME FLORENCE</p>
+      </div>
     </div>
-    <div className='profile-name'> User Name</div>
     </>
 
 
