@@ -1,24 +1,21 @@
-import './UserPurchases.css';
+import './UserPassPurchases.scss';
 
 
-export default function UserPurchases() {
+export default function UserPassPurchases(props) {
   return (
     <>
-       <div className='userPurchases'>
-            <div>
+       <div className='user-purchases'>
+            <div className='user-purchases__active-wrpr'>
               <p>ACTIVE PASSESS</p>
-              <p>2</p>
+              <p>{props.activePasses}</p>
             </div>
-            <div>
+            <div className='user-purchases__used-wrpr'>
               <p>USED PASSESS</p>
               <p>10</p>
-              
             </div>
         </div>
 
     </>
 
-
-     
   );
 }

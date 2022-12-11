@@ -11,26 +11,27 @@ export default function Header() {
                     <img src={logo} alt="" className='header-main__img'/>
                 </div>
                 <div className='header-main__wrp-nav'>
-                    <Link to="/">
-                        <button className="header-main__nav">
-                            <label>HOME</label>
-                        </button>
-                    </Link>
-                    <Link to="/book">
-                        <button className="header-main__nav">
-                            <label>BOOK</label>
-                        </button>
-                    </Link>
-                    <Link to="/buy">
-                        <button className="header-main__nav">
-                            <label>BUY</label>
-                        </button>
-                    </Link>
-                    <Link to="/dancer">
-                        <button className="header-main__nav">
-                            <label>DANCER</label>
-                        </button>
-                    </Link>
+                    <div className="header-main__nav">
+                        <Link to="/">
+                            <li className="header-main__nav-li">HOME</li>
+                        </Link>
+                    </div>
+                    <div className="header-main__nav">
+                        <Link to="/book">
+                            <li className="header-main__nav-li">BOOK</li>
+                        </Link>
+                    </div>
+                    <div className="header-main__nav">
+                        <Link to="/buy">
+                            <li className="header-main__nav-li">BUY</li>
+                        </Link>
+                    </div>
+                    <div className="header-main__nav">
+                        <Link to="/dancer">
+                            <li className="header-main__nav-li">DANCER</li>
+                        </Link>
+                    </div>ç
+
                 </div>
             </div>
 		</>

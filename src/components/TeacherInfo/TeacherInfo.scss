@@ -7,11 +7,12 @@
     &__main-wrpr {
 
         display: flex;
+        // justify-content: space-around;
         background-color: $btn-pink1;
         color: $text-color;
         font-weight: 600;
         text-align: center;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         margin-bottom: .5rem;
         margin-top: 1rem;

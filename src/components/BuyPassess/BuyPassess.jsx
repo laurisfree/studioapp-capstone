@@ -1,25 +1,39 @@
 import './BuyPassess.scss';
 
-export default function BuyPassess() {
+import {Link, useNavigate} from 'react-router-dom';
+
+export default function BuyPassess(props) {
+
+  const navigate = useNavigate();
+
+  function updateActivePasses(){
+    props.setActivePasses(10);
+    navigate('/');
+  }
+
   return (
     <>
+      <h2>Purchase Passess for the studio</h2>
       <form className='buy-p'>
-
-        <div className='buy-p__wrpr'>
-          <p className='buy-p__label'>PURCHASE CLASS PASSESS</p>
-          <div className='buy-p__btns-wrpr'>
-            <div className='buy-p__selector-item'>
-              <input type="radio" id="radio1" name="selector" className='buy-p__selector-item-radio' checked />
-              <label for="radio1" className='buy-p__selector-item-label'>5 Passess <br />1.5 hour class <br />$100</label>
-            </div>
-            <div className='buy-p__selecotr-item'>
-              <input type="radio" id="radio2" name="selector" className='buy-p__selector-item-radio' />
-              <label for="radio2" className='buy-p__selector-item-label'>10 Passess <br /> 1.5 hour class <br />$200</label>
-            </div>
-          </div>
+        <div className='buy-p__btn-wrpr'>
+          <input type="radio" id="5-passess" name="passess" value="5 Passess" />
+          <label for="">5 Passess. 1.5 hour class. $100 CND</label>
+        {/* <br /> */}
         </div>
-
+        <div className='buy-p__btn-wrpr'>
+          {/* <div className='buy-p__input-wrpr'> */}
+            <input type="radio" id="10-passess" name="passess" value="10 Passess" />
+          {/* </div> */}
+          {/* <div className='buy-p__label-wrpr'> */}
+            <label for="javascript">10 Passess. 1.5 hour class. $200 CND</label>
+         {/* </div> */}
+        </div>
       </form>
+      <div className='buy-p__total'>
+        <p>You are going to purschase ....</p>
+        <button onClick={updateActivePasses}>CONFIRM</button>
+      </div>
     </>
   );
 }
+

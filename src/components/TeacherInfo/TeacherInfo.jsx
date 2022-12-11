@@ -7,6 +7,7 @@ import imgcteacher1 from '../../assets/photos/teacher1.png'
 import imgcteacher2 from '../../assets/photos/teacher2.png'
 import imgcteacher3 from '../../assets/photos/teacher3.png'
 import imgcteacher4 from '../../assets/photos/teacher4.png'
+import {Link} from 'react-router-dom';
 
 
 export default function TeacherInfo() {
@@ -14,6 +15,9 @@ export default function TeacherInfo() {
     <>
         <div className='class-info'>
           <div className='class-info__main-wrpr'>
+            <div>
+            <Link to="/book"><button>BACK</button></Link>
+            </div>
             <p>ADV. BALLET</p>
           </div>
           <div className='class-info__text-wrpr'>
@@ -32,6 +36,7 @@ export default function TeacherInfo() {
         {/* Info of the teacher */}
         <div className='teacher-info'>
           <div className='teacher-info__main-wrpr'>
+            {/* <Link to="/book"><button>BACK</button></Link> */}
             <p>MARY SHELLBY</p>
           </div>
           <div className='teacher-info__text-wrpr'>
