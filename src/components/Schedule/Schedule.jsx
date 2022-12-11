@@ -24,7 +24,7 @@ export default function Schedule() {
         <TextField type="date" name="anydate"></TextField>
         {/* <div>When would you be dancing</div> */}
         {bookingData.map((item)=>(
-<div className='schedule'>
+        <div className='schedule'>
           <div className='schedule__day-wrpr'>
           <div>{moment(item.date).format('dddd MMMM Do YYYY')}</div>
         </div>
@@ -35,7 +35,7 @@ export default function Schedule() {
           <Link to="/book/info"><button className='schedule__btn'>+</button></Link>
           <Link to="/book/confirmation" state={{data:item}}><button className='schedule__btn'>BOOK</button></Link>
         </div>
-</div>
+      </div>
           ))}
       </div>
     </>

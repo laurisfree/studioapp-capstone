@@ -32,7 +32,11 @@ export default function BookingConfirmation() {
       {/* <Link to='/book/info'> <Link/> */}
       <button onClick={onConfirmHanlder}>CONFIRM</button>
       {/* <button>CONFIRM</button> */}
-        <p>Add to my Caledar</p>
+        {/* <p>Add to my Caledar</p> */}
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Birthday&dates=1670462264673&details=With%20clowns%20and%20stuff&location=North%20Pole" 
+        target="_blank">add to calendar</a>
+        {/* console.log(Date.now()); */}
+        {/* console.log(moment(data.time).format('h:mm')) */}
       </div>
     </>
   );
